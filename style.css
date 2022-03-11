@@ -34,7 +34,7 @@
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
-
+/* 
 .time-select {
   background-color: lightblue;
 }
@@ -45,7 +45,7 @@
 
 .player-container {
   background-color: lightcoral;
-}
+} */
 
 .time-display {
   position: absolute;
@@ -55,5 +55,8 @@
 }
 
 video {
-  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
 }
