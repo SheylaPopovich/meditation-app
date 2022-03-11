@@ -73,7 +73,6 @@ video {
   border-radius: 5px;
   font-size: 20px;
   transition: all 0.5s ease;
-  padding: 30px;
 }
 
 .time-select button:hover {
@@ -86,6 +85,7 @@ video {
   height: 120px;
   width: 120px;
   border-radius: 50%;
+  padding: 30px;
 }
 
 .sound-picker button:nth-child(1) {
