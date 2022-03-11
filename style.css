@@ -10,3 +10,15 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
+.time-select, .sound-picker{
+
+}
+
+.time-select {
+    background-color: lightblue;
+}
+
+.sound-picker{
+    background-color: lightgreen;
+}
