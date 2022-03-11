@@ -22,7 +22,7 @@ const app = () => {
 
   //Play sound
   play.addEventListener("click", () => {
-    song.play();
+   checkPlaying(song);
   });
 
   //Create a function specific to stop and play the sounds
