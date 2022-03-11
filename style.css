@@ -79,3 +79,18 @@ video {
   color: black;
   background-color: white; 
 }
+
+.sound-picker button {
+  border: none;
+  height: 120px;
+  width: 120px;
+
+}
+
+.sound-picker button:nth-child(1){
+background-color: #4972a1;
+}
+
+.sound-picker button:nth-child(2){
+
+}
