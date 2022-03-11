@@ -61,3 +61,11 @@ video {
   width: 100%;
   z-index: -10;
 }
+
+.time-select button,
+.sound-picker button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+}
