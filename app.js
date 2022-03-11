@@ -3,6 +3,14 @@ const app = () => {
     const play = document.querySelector('.play');
     const outline = document.querySelector('.moving-outline circle');
     const video = document.querySelector('.vid-container video');
+
+    //App Sounds
+    const sounds = document.querySelectorAll('.sound-picker button');
+
+    //Time display
+    const timeDisplay =document.querySelector('.time-display');
+
     
+
 }
 app();
