@@ -9,6 +9,7 @@ const app = () => {
 
   //Time display
   const timeDisplay = document.querySelector(".time-display");
+  const timeSelect = document.querySelectorAll(".time-select button");
 
   //Get the length of the outline
   const outlineLength = outline.getTotalLength();
@@ -24,6 +25,13 @@ const app = () => {
   play.addEventListener("click", () => {
     checkPlaying(song);
   });
+
+  //Select sound
+  timeSelect.forEach(option => {
+      option.addEventListener('click' function() =>{
+
+      })
+  })
 
   //Create a function specific to stop and play the sounds
   const checkPlaying = (song) => {
@@ -45,10 +53,12 @@ const app = () => {
     let seconds = Math.floor(elapsedTime % 60);
     let minutes = Math.floor(elapsedTime / 60);
 
-
     //Animate the circle
     let progress = outlineLength - (currentTime / fakeDuration) * outlineLength;
-    outline.style.strokeDashoffset =progress;
+    outline.style.strokeDashoffset = progress;
+
+    //Animate the text
+    timeDisplay.textContent = `${minutes}:${seconds}`;
   };
 };
 app();
