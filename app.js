@@ -38,12 +38,17 @@ const app = () => {
     }
   };
 
-  //Animate the circle
+  //The circle can be animated
   song.ontimeupdate = () => {
     let currentTime = song.currentTime;
     let elapsedTime = fakeDuration - currentTime;
     let seconds = Math.floor(elapsedTime % 60);
     let minutes = Math.floor(elapsedTime / 60);
+
+
+    //Animate the circle
+    let progress = outlineLength - (currentTime / fakeDuration) * outlineLength;
+    outline.style.strokeDashoffset =progress;
   };
 };
 app();
